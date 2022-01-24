@@ -1,4 +1,4 @@
-# Avalara.ASV.AgeVerificationApi
+# Avalara.SDK.AgeVerificationApi
 
 All URIs are relative to *http://localhost*
 
@@ -21,15 +21,15 @@ The request must meet the following criteria in order to be evaluated: * *firstN
 
 ```python
 import time
-import Avalara.ASV
-from Avalara.ASV.api import age_verification_api
-from Avalara.ASV.model.age_verify_failure_code import AgeVerifyFailureCode
-from Avalara.ASV.model.age_verify_result import AgeVerifyResult
-from Avalara.ASV.model.age_verify_request import AgeVerifyRequest
+import Avalara.SDK
+from Avalara.SDK.api import age_verification_api
+from Avalara.SDK.model.age_verify_result import AgeVerifyResult
+from Avalara.SDK.model.age_verify_failure_code import AgeVerifyFailureCode
+from Avalara.SDK.model.age_verify_request import AgeVerifyRequest
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = Avalara.ASV.Configuration(
+configuration = Avalara.SDK.Configuration(
     host = "http://localhost"
 )
 
@@ -39,7 +39,7 @@ configuration = Avalara.ASV.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = Avalara.ASV.Configuration(
+configuration = Avalara.SDK.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
@@ -51,7 +51,7 @@ configuration.api_key['Bearer'] = 'YOUR_API_KEY'
 # configuration.api_key_prefix['Bearer'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with Avalara.ASV.ApiClient(configuration) as api_client:
+with Avalara.SDK.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = age_verification_api.AgeVerificationApi(api_client)
     age_verify_request = AgeVerifyRequest(
@@ -73,7 +73,7 @@ with Avalara.ASV.ApiClient(configuration) as api_client:
         # Determines whether an individual meets or exceeds the minimum legal drinking age.
         api_response = api_instance.verify_age(age_verify_request)
         pprint(api_response)
-    except Avalara.ASV.ApiException as e:
+    except Avalara.SDK.ApiException as e:
         print("Exception when calling AgeVerificationApi->verify_age: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -82,7 +82,7 @@ with Avalara.ASV.ApiClient(configuration) as api_client:
         # Determines whether an individual meets or exceeds the minimum legal drinking age.
         api_response = api_instance.verify_age(age_verify_request, simulated_failure_code=simulated_failure_code)
         pprint(api_response)
-    except Avalara.ASV.ApiException as e:
+    except Avalara.SDK.ApiException as e:
         print("Exception when calling AgeVerificationApi->verify_age: %s\n" % e)
 ```
 

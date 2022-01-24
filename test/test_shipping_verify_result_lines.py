@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import Avalara.ASV
-from Avalara.ASV.model.shipping_verify_result_lines import ShippingVerifyResultLines
+import Avalara.SDK
+from Avalara.SDK.model.shipping_verify_result_lines import ShippingVerifyResultLines
 
 
 class TestShippingVerifyResultLines(unittest.TestCase):

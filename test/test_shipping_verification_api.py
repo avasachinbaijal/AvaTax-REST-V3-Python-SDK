@@ -10,8 +10,8 @@
 
 import unittest
 
-import Avalara.ASV
-from Avalara.ASV.api.shipping_verification_api import ShippingVerificationApi  # noqa: E501
+import Avalara.SDK
+from Avalara.SDK.api.shipping_verification_api import ShippingVerificationApi  # noqa: E501
 
 
 class TestShippingVerificationApi(unittest.TestCase):

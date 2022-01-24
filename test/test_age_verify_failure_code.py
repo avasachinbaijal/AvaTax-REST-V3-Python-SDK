@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import Avalara.ASV
-from Avalara.ASV.model.age_verify_failure_code import AgeVerifyFailureCode
+import Avalara.SDK
+from Avalara.SDK.model.age_verify_failure_code import AgeVerifyFailureCode
 
 
 class TestAgeVerifyFailureCode(unittest.TestCase):

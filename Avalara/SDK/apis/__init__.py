@@ -14,5 +14,5 @@
 #   sys.setrecursionlimit(n)
 
 # Import APIs into API package:
-from Avalara.ASV.api.age_verification_api import AgeVerificationApi
-from Avalara.ASV.api.shipping_verification_api import ShippingVerificationApi
+from Avalara.SDK.api.age_verification_api import AgeVerificationApi
+from Avalara.SDK.api.shipping_verification_api import ShippingVerificationApi

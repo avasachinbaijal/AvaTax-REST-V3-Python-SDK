@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import Avalara.ASV
-from Avalara.ASV.model.age_verify_request_address import AgeVerifyRequestAddress
+import Avalara.SDK
+from Avalara.SDK.model.age_verify_request_address import AgeVerifyRequestAddress
 
 
 class TestAgeVerifyRequestAddress(unittest.TestCase):

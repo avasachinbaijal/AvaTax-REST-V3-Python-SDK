@@ -1,3 +1,5 @@
+# flake8: noqa
+
 """
 AvaTax Software Development Kit for Python.
 
@@ -22,39 +24,21 @@ AvaTax Software Development Kit for Python.
 @author     Jonathan Wenger <jonathan.wenger@avalara.com>
 @copyright  2022 Avalara, Inc.
 @license    https://www.apache.org/licenses/LICENSE-2.0
-@version    2.1.6
 @link       https://github.com/avadev/AvaTax-REST-V3-Python-SDK
 """
 
-from setuptools import setup, find_packages  # noqa: H301
+__version__ = "22.1.0"
 
-NAME = "Avalara.SDK"
-VERSION = "2.1.6"
-# To install the library, run the following
-#
-# python setup.py install
-#
-# prerequisite: setuptools
-# http://pypi.python.org/pypi/setuptools
+# import ApiClient
+from Avalara.SDK.api_client import ApiClient
 
-REQUIRES = [
-  "urllib3 >= 1.25.3",
-  "python-dateutil",
-]
+# import Configuration
+from Avalara.SDK.configuration import Configuration
 
-setup(
-    name=NAME,
-    version=VERSION,
-    description="Avalara Shipping Verification for Beverage Alcohol",
-    author="OpenAPI Generator community",
-    author_email="team@openapitools.org",
-    url="",
-    keywords=["OpenAPI", "OpenAPI-Generator", "Avalara Shipping Verification for Beverage Alcohol"],
-    python_requires=">=3.6",
-    install_requires=REQUIRES,
-    packages=find_packages(exclude=["test", "tests"]),
-    include_package_data=True,
-    long_description="""\
-    API for evaluating transactions against direct-to-consumer Beverage Alcohol shipping regulations.  This API is currently in beta.   # noqa: E501
-    """
-)
+# import exceptions
+from Avalara.SDK.exceptions import OpenApiException
+from Avalara.SDK.exceptions import ApiAttributeError
+from Avalara.SDK.exceptions import ApiTypeError
+from Avalara.SDK.exceptions import ApiValueError
+from Avalara.SDK.exceptions import ApiKeyError
+from Avalara.SDK.exceptions import ApiException

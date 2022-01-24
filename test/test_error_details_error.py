@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import Avalara.ASV
-from Avalara.ASV.model.error_details_error_details import ErrorDetailsErrorDetails
+import Avalara.SDK
+from Avalara.SDK.model.error_details_error_details import ErrorDetailsErrorDetails
 globals()['ErrorDetailsErrorDetails'] = ErrorDetailsErrorDetails
-from Avalara.ASV.model.error_details_error import ErrorDetailsError
+from Avalara.SDK.model.error_details_error import ErrorDetailsError
 
 
 class TestErrorDetailsError(unittest.TestCase):

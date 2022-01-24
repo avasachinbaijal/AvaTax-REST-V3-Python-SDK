@@ -10,8 +10,8 @@
 
 import unittest
 
-import Avalara.ASV
-from Avalara.ASV.api.age_verification_api import AgeVerificationApi  # noqa: E501
+import Avalara.SDK
+from Avalara.SDK.api.age_verification_api import AgeVerificationApi  # noqa: E501
 
 
 class TestAgeVerificationApi(unittest.TestCase):

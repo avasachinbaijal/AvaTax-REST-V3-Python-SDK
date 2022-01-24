@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import Avalara.ASV
-from Avalara.ASV.model.age_verify_result import AgeVerifyResult
+import Avalara.SDK
+from Avalara.SDK.model.age_verify_result import AgeVerifyResult
 
 
 class TestAgeVerifyResult(unittest.TestCase):
