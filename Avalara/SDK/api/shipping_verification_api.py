@@ -15,14 +15,14 @@ AvaTax Software Development Kit for Python.
    See the License for the specific language governing permissions and
    limitations under the License.
 
-    Avalara Shipping Verification for Beverage Alcohol
+    Avalara Shipping Verification only
     API for evaluating transactions against direct-to-consumer Beverage Alcohol shipping regulations.  This API is currently in beta.  
 
 @author     Sachin Baijal <sachin.baijal@avalara.com>
 @author     Jonathan Wenger <jonathan.wenger@avalara.com>
 @copyright  2022 Avalara, Inc.
 @license    https://www.apache.org/licenses/LICENSE-2.0
-@version    2.1.6
+@version    2.3.1
 @link       https://github.com/avadev/AvaTax-REST-V3-Python-SDK
 """
 
@@ -54,7 +54,7 @@ class ShippingVerificationApi(object):
     
     def __set_configuration(self, api_client):
         self.__verify_api_client(api_client)
-        api_client.set_sdk_version("2.1.6")
+        api_client.set_sdk_version("2.3.1")
         self.api_client = api_client
 		
         self.deregister_shipment_endpoint = _Endpoint(
