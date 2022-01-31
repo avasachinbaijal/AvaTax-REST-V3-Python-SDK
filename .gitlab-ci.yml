@@ -8,7 +8,7 @@ stages:
   script:
    - pip install -r requirements.txt
    - pip install -r test-requirements.txt
-   - pytest --cov=Avalara.SDK
+   - pytest --cov=AvalaraTest.SDK
 
 test-3.6:
   extends: .tests
