@@ -22,14 +22,14 @@ AvaTax Software Development Kit for Python.
 @author     Jonathan Wenger <jonathan.wenger@avalara.com>
 @copyright  2022 Avalara, Inc.
 @license    https://www.apache.org/licenses/LICENSE-2.0
-@version    2.4.5.1
+@version    2.4.5.3
 @link       https://github.com/avadev/AvaTax-REST-V3-Python-SDK
 """
 
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "Avalara.SDK"
-VERSION = "2.4.5.1"
+VERSION = "2.4.5.3"
 # To install the library, run the following
 #
 # python setup.py install
