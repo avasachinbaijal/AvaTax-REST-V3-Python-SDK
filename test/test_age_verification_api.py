@@ -35,7 +35,8 @@ class TestAgeVerificationApi(unittest.TestCase):
     """AgeVerificationApi unit test stubs"""
 
     def setUp(self):
-        self.api = AgeVerificationApi()  # noqa: E501
+        """TEST API STUB"""
+        # self.api = AgeVerificationApi()  # noqa: E501
 
     def tearDown(self):
         pass

@@ -36,7 +36,8 @@ class TestShippingVerificationApi(unittest.TestCase):
     """ShippingVerificationApi unit test stubs"""
 
     def setUp(self):
-        self.api = ShippingVerificationApi()  # noqa: E501
+        """Test API stub"""
+        # self.api = ShippingVerificationApi()  # noqa: E501
 
     def tearDown(self):
         pass
