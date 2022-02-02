@@ -22,7 +22,7 @@ AvaTax Software Development Kit for Python.
 @author     Jonathan Wenger <jonathan.wenger@avalara.com>
 @copyright  2022 Avalara, Inc.
 @license    https://www.apache.org/licenses/LICENSE-2.0
-@version    2.4.5.4
+@version    2.4.6
 @link       https://github.com/avadev/AvaTax-REST-V3-Python-SDK
 """
 
