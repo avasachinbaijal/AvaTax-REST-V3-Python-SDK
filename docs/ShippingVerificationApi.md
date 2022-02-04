@@ -1,4 +1,4 @@
-# Avalara.SDK.ShippingVerificationApi
+# openapi_client.ShippingVerificationApi
 
 All URIs are relative to *http://localhost*
 
@@ -22,13 +22,13 @@ Removes the transaction from consideration when evaluating regulations that span
 
 ```python
 import time
-import Avalara.SDK
-from Avalara.SDK.api import shipping_verification_api
-from Avalara.SDK.model.error_details import ErrorDetails
+import openapi_client
+from openapi_client.api import shipping_verification_api
+from openapi_client.model.error_details import ErrorDetails
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = Avalara.SDK.Configuration(
+configuration = openapi_client.Configuration(
     host = "http://localhost"
 )
 
@@ -38,7 +38,7 @@ configuration = Avalara.SDK.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = Avalara.SDK.Configuration(
+configuration = openapi_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
@@ -50,7 +50,7 @@ configuration.api_key['Bearer'] = 'YOUR_API_KEY'
 # configuration.api_key_prefix['Bearer'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with Avalara.SDK.ApiClient(configuration) as api_client:
+with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = shipping_verification_api.ShippingVerificationApi(api_client)
     company_code = "companyCode_example" # str | The company code of the company that recorded the transaction
@@ -61,7 +61,7 @@ with Avalara.SDK.ApiClient(configuration) as api_client:
     try:
         # Removes the transaction from consideration when evaluating regulations that span multiple transactions.
         api_instance.deregister_shipment(company_code, transaction_code)
-    except Avalara.SDK.ApiException as e:
+    except openapi_client.ApiException as e:
         print("Exception when calling ShippingVerificationApi->deregister_shipment: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -69,7 +69,7 @@ with Avalara.SDK.ApiClient(configuration) as api_client:
     try:
         # Removes the transaction from consideration when evaluating regulations that span multiple transactions.
         api_instance.deregister_shipment(company_code, transaction_code, document_type=document_type)
-    except Avalara.SDK.ApiException as e:
+    except openapi_client.ApiException as e:
         print("Exception when calling ShippingVerificationApi->deregister_shipment: %s\n" % e)
 ```
 
@@ -120,13 +120,13 @@ Registers the transaction so that it may be included when evaluating regulations
 
 ```python
 import time
-import Avalara.SDK
-from Avalara.SDK.api import shipping_verification_api
-from Avalara.SDK.model.error_details import ErrorDetails
+import openapi_client
+from openapi_client.api import shipping_verification_api
+from openapi_client.model.error_details import ErrorDetails
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = Avalara.SDK.Configuration(
+configuration = openapi_client.Configuration(
     host = "http://localhost"
 )
 
@@ -136,7 +136,7 @@ configuration = Avalara.SDK.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = Avalara.SDK.Configuration(
+configuration = openapi_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
@@ -148,7 +148,7 @@ configuration.api_key['Bearer'] = 'YOUR_API_KEY'
 # configuration.api_key_prefix['Bearer'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with Avalara.SDK.ApiClient(configuration) as api_client:
+with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = shipping_verification_api.ShippingVerificationApi(api_client)
     company_code = "companyCode_example" # str | The company code of the company that recorded the transaction
@@ -159,7 +159,7 @@ with Avalara.SDK.ApiClient(configuration) as api_client:
     try:
         # Registers the transaction so that it may be included when evaluating regulations that span multiple transactions.
         api_instance.register_shipment(company_code, transaction_code)
-    except Avalara.SDK.ApiException as e:
+    except openapi_client.ApiException as e:
         print("Exception when calling ShippingVerificationApi->register_shipment: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -167,7 +167,7 @@ with Avalara.SDK.ApiClient(configuration) as api_client:
     try:
         # Registers the transaction so that it may be included when evaluating regulations that span multiple transactions.
         api_instance.register_shipment(company_code, transaction_code, document_type=document_type)
-    except Avalara.SDK.ApiException as e:
+    except openapi_client.ApiException as e:
         print("Exception when calling ShippingVerificationApi->register_shipment: %s\n" % e)
 ```
 
@@ -218,14 +218,14 @@ Evaluates a transaction against a set of direct-to-consumer shipping regulations
 
 ```python
 import time
-import Avalara.SDK
-from Avalara.SDK.api import shipping_verification_api
-from Avalara.SDK.model.shipping_verify_result import ShippingVerifyResult
-from Avalara.SDK.model.error_details import ErrorDetails
+import openapi_client
+from openapi_client.api import shipping_verification_api
+from openapi_client.model.error_details import ErrorDetails
+from openapi_client.model.shipping_verify_result import ShippingVerifyResult
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = Avalara.SDK.Configuration(
+configuration = openapi_client.Configuration(
     host = "http://localhost"
 )
 
@@ -235,7 +235,7 @@ configuration = Avalara.SDK.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = Avalara.SDK.Configuration(
+configuration = openapi_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
@@ -247,7 +247,7 @@ configuration.api_key['Bearer'] = 'YOUR_API_KEY'
 # configuration.api_key_prefix['Bearer'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with Avalara.SDK.ApiClient(configuration) as api_client:
+with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = shipping_verification_api.ShippingVerificationApi(api_client)
     company_code = "companyCode_example" # str | The company code of the company that recorded the transaction
@@ -259,7 +259,7 @@ with Avalara.SDK.ApiClient(configuration) as api_client:
         # Evaluates a transaction against a set of direct-to-consumer shipping regulations and, if compliant, registers the transaction so that it may be included when evaluating regulations that span multiple transactions.
         api_response = api_instance.register_shipment_if_compliant(company_code, transaction_code)
         pprint(api_response)
-    except Avalara.SDK.ApiException as e:
+    except openapi_client.ApiException as e:
         print("Exception when calling ShippingVerificationApi->register_shipment_if_compliant: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -268,7 +268,7 @@ with Avalara.SDK.ApiClient(configuration) as api_client:
         # Evaluates a transaction against a set of direct-to-consumer shipping regulations and, if compliant, registers the transaction so that it may be included when evaluating regulations that span multiple transactions.
         api_response = api_instance.register_shipment_if_compliant(company_code, transaction_code, document_type=document_type)
         pprint(api_response)
-    except Avalara.SDK.ApiException as e:
+    except openapi_client.ApiException as e:
         print("Exception when calling ShippingVerificationApi->register_shipment_if_compliant: %s\n" % e)
 ```
 
@@ -321,14 +321,14 @@ The transaction and its lines must meet the following criteria in order to be ev
 
 ```python
 import time
-import Avalara.SDK
-from Avalara.SDK.api import shipping_verification_api
-from Avalara.SDK.model.shipping_verify_result import ShippingVerifyResult
-from Avalara.SDK.model.error_details import ErrorDetails
+import openapi_client
+from openapi_client.api import shipping_verification_api
+from openapi_client.model.error_details import ErrorDetails
+from openapi_client.model.shipping_verify_result import ShippingVerifyResult
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = Avalara.SDK.Configuration(
+configuration = openapi_client.Configuration(
     host = "http://localhost"
 )
 
@@ -338,7 +338,7 @@ configuration = Avalara.SDK.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = Avalara.SDK.Configuration(
+configuration = openapi_client.Configuration(
     username = 'YOUR_USERNAME',
     password = 'YOUR_PASSWORD'
 )
@@ -350,7 +350,7 @@ configuration.api_key['Bearer'] = 'YOUR_API_KEY'
 # configuration.api_key_prefix['Bearer'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with Avalara.SDK.ApiClient(configuration) as api_client:
+with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = shipping_verification_api.ShippingVerificationApi(api_client)
     company_code = "companyCode_example" # str | The company code of the company that recorded the transaction
@@ -362,7 +362,7 @@ with Avalara.SDK.ApiClient(configuration) as api_client:
         # Evaluates a transaction against a set of direct-to-consumer shipping regulations.
         api_response = api_instance.verify_shipment(company_code, transaction_code)
         pprint(api_response)
-    except Avalara.SDK.ApiException as e:
+    except openapi_client.ApiException as e:
         print("Exception when calling ShippingVerificationApi->verify_shipment: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -371,7 +371,7 @@ with Avalara.SDK.ApiClient(configuration) as api_client:
         # Evaluates a transaction against a set of direct-to-consumer shipping regulations.
         api_response = api_instance.verify_shipment(company_code, transaction_code, document_type=document_type)
         pprint(api_response)
-    except Avalara.SDK.ApiException as e:
+    except openapi_client.ApiException as e:
         print("Exception when calling ShippingVerificationApi->verify_shipment: %s\n" % e)
 ```
 

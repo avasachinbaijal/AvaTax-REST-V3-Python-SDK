@@ -1,3 +1,5 @@
+# flake8: noqa
+
 """
 AvaTax Software Development Kit for Python.
 
@@ -26,35 +28,18 @@ AvaTax Software Development Kit for Python.
 @link       https://github.com/avadev/AvaTax-REST-V3-Python-SDK
 """
 
-from setuptools import setup, find_packages  # noqa: H301
+__version__ = "2.4.13-beta"
 
-NAME = "openapi-client"
-VERSION = "2.4.13-beta"
-# To install the library, run the following
-#
-# python setup.py install
-#
-# prerequisite: setuptools
-# http://pypi.python.org/pypi/setuptools
+# import ApiClient
+from openapi_client.api_client import ApiClient
 
-REQUIRES = [
-  "urllib3 >= 1.25.3",
-  "python-dateutil",
-]
+# import Configuration
+from openapi_client.configuration import Configuration
 
-setup(
-    name=NAME,
-    version=VERSION,
-    description="Avalara Shipping Verification only",
-    author="OpenAPI Generator community",
-    author_email="team@openapitools.org",
-    url="",
-    keywords=["OpenAPI", "OpenAPI-Generator", "Avalara Shipping Verification only"],
-    python_requires=">=3.6",
-    install_requires=REQUIRES,
-    packages=find_packages(exclude=["test", "tests"]),
-    include_package_data=True,
-    long_description="""\
-    API for evaluating transactions against direct-to-consumer Beverage Alcohol shipping regulations.  This API is currently in beta.   # noqa: E501
-    """
-)
+# import exceptions
+from openapi_client.exceptions import OpenApiException
+from openapi_client.exceptions import ApiAttributeError
+from openapi_client.exceptions import ApiTypeError
+from openapi_client.exceptions import ApiValueError
+from openapi_client.exceptions import ApiKeyError
+from openapi_client.exceptions import ApiException
