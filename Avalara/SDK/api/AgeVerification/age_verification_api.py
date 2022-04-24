@@ -22,7 +22,7 @@ AvaTax Software Development Kit for Python.
 @author     Jonathan Wenger <jonathan.wenger@avalara.com>
 @copyright  2022 Avalara, Inc.
 @license    https://www.apache.org/licenses/LICENSE-2.0
-@version    2.4.26
+@version    2.4.29
 @link       https://github.com/avadev/AvaTax-REST-V3-Python-SDK
 """
 
@@ -39,9 +39,9 @@ from Avalara.SDK.model_utils import (  # noqa: F401
     none_type,
     validate_and_convert_types
 )
-from Avalara.SDK.model.age_verify_failure_code import AgeVerifyFailureCode
-from Avalara.SDK.model.age_verify_request import AgeVerifyRequest
-from Avalara.SDK.model.age_verify_result import AgeVerifyResult
+from Avalara.SDK.model.AgeVerification.age_verify_failure_code import AgeVerifyFailureCode
+from Avalara.SDK.model.AgeVerification.age_verify_request import AgeVerifyRequest
+from Avalara.SDK.model.AgeVerification.age_verify_result import AgeVerifyResult
 from Avalara.SDK.exceptions import ApiTypeError, ApiValueError, ApiException
 
 class AgeVerificationApi(object):
@@ -55,7 +55,7 @@ class AgeVerificationApi(object):
     
     def __set_configuration(self, api_client):
         self.__verify_api_client(api_client)
-        api_client.set_sdk_version("2.4.26")
+        api_client.set_sdk_version("2.4.29")
         self.api_client = api_client
 		
         self.verify_age_endpoint = _Endpoint(
