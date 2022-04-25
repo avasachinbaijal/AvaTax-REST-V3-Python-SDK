@@ -28,7 +28,7 @@ AvaTax Software Development Kit for Python.
 import unittest
 
 import Avalara.SDK
-from Avalara.SDK.api.age_verification_api import AgeVerificationApi  # noqa: E501
+from Avalara.SDK.api.AgeVerification.age_verification_api import AgeVerificationApi  # noqa: E501
 
 
 class TestAgeVerificationApi(unittest.TestCase):

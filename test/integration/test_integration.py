@@ -3,7 +3,7 @@ import pytest
 
 import time
 import Avalara.SDK
-from Avalara.SDK.api.shipping_verification_api import ShippingVerificationApi  # noqa: E501
+from Avalara.SDK.api.Shipping.shipping_verification_api import ShippingVerificationApi  # noqa: E501
 
 @pytest.mark.usefixtures("params")
 class TestShippingVerificationApi(unittest.TestCase):

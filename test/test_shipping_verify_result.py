@@ -28,9 +28,9 @@ import sys
 import unittest
 
 import Avalara.SDK
-from Avalara.SDK.model.shipping_verify_result_lines import ShippingVerifyResultLines
+from Avalara.SDK.model.Shipping.shipping_verify_result_lines import ShippingVerifyResultLines
 globals()['ShippingVerifyResultLines'] = ShippingVerifyResultLines
-from Avalara.SDK.model.shipping_verify_result import ShippingVerifyResult
+from Avalara.SDK.model.Shipping.shipping_verify_result import ShippingVerifyResult
 
 
 class TestShippingVerifyResult(unittest.TestCase):

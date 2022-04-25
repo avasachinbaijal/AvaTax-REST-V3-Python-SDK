@@ -29,7 +29,7 @@ import sys
 import unittest
 
 import Avalara.SDK
-from Avalara.SDK.model.age_verify_failure_code import AgeVerifyFailureCode
+from Avalara.SDK.model.AgeVerification.age_verify_failure_code import AgeVerifyFailureCode
 
 
 class TestAgeVerifyFailureCode(unittest.TestCase):

@@ -29,7 +29,7 @@ import sys
 import unittest
 
 import Avalara.SDK
-from Avalara.SDK.model.shipping_verify_result_lines import ShippingVerifyResultLines
+from Avalara.SDK.model.Shipping.shipping_verify_result_lines import ShippingVerifyResultLines
 
 
 class TestShippingVerifyResultLines(unittest.TestCase):

@@ -30,9 +30,9 @@ import sys
 import unittest
 
 import Avalara.SDK
-from Avalara.SDK.model.age_verify_request_address import AgeVerifyRequestAddress
+from Avalara.SDK.model.AgeVerification.age_verify_request_address import AgeVerifyRequestAddress
 globals()['AgeVerifyRequestAddress'] = AgeVerifyRequestAddress
-from Avalara.SDK.model.age_verify_request import AgeVerifyRequest
+from Avalara.SDK.model.AgeVerification.age_verify_request import AgeVerifyRequest
 
 
 class TestAgeVerifyRequest(unittest.TestCase):

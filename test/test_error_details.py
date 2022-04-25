@@ -29,9 +29,9 @@ import sys
 import unittest
 
 import Avalara.SDK
-from Avalara.SDK.model.error_details_error import ErrorDetailsError
+from Avalara.SDK.model.Shipping.error_details_error import ErrorDetailsError
 globals()['ErrorDetailsError'] = ErrorDetailsError
-from Avalara.SDK.model.error_details import ErrorDetails
+from Avalara.SDK.model.Shipping.error_details import ErrorDetails
 
 
 class TestErrorDetails(unittest.TestCase):

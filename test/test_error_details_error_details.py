@@ -29,7 +29,7 @@ import sys
 import unittest
 
 import Avalara.SDK
-from Avalara.SDK.model.error_details_error_details import ErrorDetailsErrorDetails
+from Avalara.SDK.model.Shipping.error_details_error_details import ErrorDetailsErrorDetails
 
 
 class TestErrorDetailsErrorDetails(unittest.TestCase):

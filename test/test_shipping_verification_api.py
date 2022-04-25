@@ -29,7 +29,7 @@ AvaTax Software Development Kit for Python.
 import unittest
 
 import Avalara.SDK
-from Avalara.SDK.api.shipping_verification_api import ShippingVerificationApi  # noqa: E501
+from Avalara.SDK.api.Shipping.shipping_verification_api import ShippingVerificationApi  # noqa: E501
 
 
 class TestShippingVerificationApi(unittest.TestCase):
